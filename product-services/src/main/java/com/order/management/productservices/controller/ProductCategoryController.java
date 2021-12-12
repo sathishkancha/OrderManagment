@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static com.order.management.productservices.utills.Constances.PRODUCT_CATEGORY_URL;
+
 
 @RestController
-@RequestMapping("/api/order-management/product-category")
+@RequestMapping(PRODUCT_CATEGORY_URL)
 public class ProductCategoryController {
     @Autowired
     ProductCategoryServiceImpl productCategoryService;
